@@ -3,16 +3,19 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { LookComponent } from './look/look.component';
+import { Globals } from './globals';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LookComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [Globals],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

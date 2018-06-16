@@ -1,0 +1,92 @@
+<div class="container" *ngIf="globals.look">
+  <div class="row">
+      <div class="col-12">
+          <div id="look-detail">
+              <div class="detail-item-head">
+                  <img [src]="globals.look.urlLookImg"/>
+              </div>
+
+              <div class="detail-item-body">
+                  <div class="detail-item-two" *ngFor="let article of globals.look.principalsArticles; let index = index; let even = even">
+                      <div *ngIf="even" class="detail-item-body-element left-img">
+                          <img *ngIf="globals.look.principalsArticles[index]" [src]="globals.look.principalsArticles[index].urlArticleImg"><h5 *ngIf="globals.look.principalsArticles[index]" class="item-price">{{globals.look.principalsArticles[index].price}} {{globals.look.principalsArticles[index].currency}}</h5>
+                          <button type="button" class="btn btn-light btn-light-shopping-site-link">Voir sur Amazon</button>
+                      </div>
+                      <div *ngIf="even" class="detail-item-body-element">
+                          <img *ngIf="globals.look.principalsArticles[index+1]" [src]="globals.look.principalsArticles[index+1].urlArticleImg"><h5 *ngIf="globals.look.principalsArticles[index+1]" class="item-price">{{globals.look.principalsArticles[index+1].price}} {{globals.look.principalsArticles[index+1].currency}}</h5>
+                          <button type="button" class="btn btn-light btn-light-shopping-site-link">Voir sur Amazon</button>
+                      </div>
+                      
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="row more-choice">
+          <div class="col-12 ">
+              <h1> Plus de choix </h1>
+          </div>
+      </div>
+
+      <div class="row"> 
+          <div class="col-3 col-item-detail" *ngFor="let article of globals.look.moreArticles; let index = index">
+              <div class="item-detail">
+                  <img [src]="article.urlArticleImg"><h5 class="item-price">{{article.price}} {{article.currency}}</h5>
+                  <button type="button" class="btn btn-light btn-light-shopping-site-link">Voir sur Amazon</button>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="fixed-bottom">
+    <div class="form-add-look"  >
+      <form *ngIf="showFormAddLook">
+          <h6> look : </h6>
+          <div class="form-row">
+            <div class="col">
+               <input type="file" class="form-control" id="lookImg">
+            </div>
+            <div class="col">
+                <button type="submit" class="btn btn-primary">Ajouter</button>
+            </div>
+          </div>
+          <h6> article principale :  </h6>
+          <div class="form-row">
+            <div class="col">
+              <input type="file" class="form-control" id="lookImg">
+            </div>
+            <div class="col">
+              <input type="number" class="form-control" id="lookImg" placeholder="Price">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" id="lookImg" placeholder="Shopping url">
+            </div>
+            <div class="col">
+              <input type="number" class="form-control" id="lookImg" placeholder="Position">
+            </div>
+            <div class="col">
+                <button type="submit" class="btn btn-primary">Ajouter</button>
+            </div>
+          </div>
+          <h6> plus d'article :  </h6>
+          <div class="form-row">
+            <div class="col">
+              <input type="file" class="form-control" id="lookImg">
+            </div>
+            <div class="col">
+              <input type="number" class="form-control" id="lookImg" placeholder="Price">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" id="lookImg" placeholder="Shopping url">
+            </div>
+            <div class="col">
+              <input type="number" class="form-control" id="lookImg" placeholder="Position">
+            </div>
+            <div class="col">
+                <button type="submit" class="btn btn-primary">Ajouter</button>
+            </div>
+          </div>
+      </form>
+      <a href="javascript:void(0);" (click)="toogleShowFormAddLook()" > show/hide</a>
+    </div>
+  </div>
+</div>

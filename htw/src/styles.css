@@ -1,1 +1,381 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+	background-color: #FAFAFA;
+}
+
+nav {
+	background-color: #FFFFFF;
+	max-height: 75px;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+@media (min-width : 150px){
+/* 	body {
+		background-color: pink;
+	} */
+	.navbar-brand {
+		padding-left: 1%;
+	}
+	ul.social-network-nav {
+		padding-right: 1%;
+	}
+	img.social-network-icon {
+		padding-right: 3px;
+	}
+	div.list-item {
+		width: 99%;
+	}
+}
+@media (min-width : 600px){
+/* 	body {
+		background-color: red;
+	} */
+	.navbar-brand {
+		padding-left: 1%;
+	}
+	ul.social-network-nav {
+		padding-right: 1%;
+	}
+	img.social-network-icon {
+		padding-right: 4px;
+	}
+	div.list-item {
+		width: 45%;
+	}
+}
+@media (min-width : 1000px){
+/* 	body {
+		background-color: yellow;
+	} */
+	.navbar-brand {
+		padding-left: 1%;
+	}
+	ul.social-network-nav {
+		padding-right: 1%;
+	}
+	img.social-network-icon {
+		padding-right: 6px;
+	}
+	div.list-item {
+		width: 45%;
+	}
+}
+@media (min-width: 1300px){
+/* 	body {
+		background-color: blue;
+	} */
+	.navbar-brand {
+		padding-left: 10%;
+	}
+	ul.social-network-nav {
+		padding-right: 10%;
+	}
+	img.social-network-icon {
+		padding-right: 8px;
+	}
+	div.list-item {
+		width: 45%;
+	}
+}
+@media (min-width: 1700px){
+/* 	body {
+		background-color: black;
+	} */
+	.navbar-brand {
+		padding-left: 14%;
+	}
+	ul.social-network-nav {
+		padding-right: 14%;
+	}
+	img.social-network-icon {
+		padding-right: 8px;
+	}
+	div.list-item {
+		width: 45%;
+	}
+}
+
+.navbar-brand {
+	display: inline-block;
+	width: 10%;
+}
+
+img#logo {
+	max-height: 45px;
+  	max-width: 70px;
+  	border-right: 1px solid #666666;
+}
+
+img#site-name{
+	max-height: 100px;
+  	padding-left: 25px;
+}
+
+@media (max-width: 310px){
+/* 	body {
+		background-color: blue;
+	} */
+	img.social-network-icon {
+		display: none;		
+	}
+}
+@media (max-width: 350px){
+/* 	body {
+		background-color: blue;
+	} */
+	img.social-network-icon {
+		max-height: 15px;
+	  	max-width: 20px;		
+	}
+}
+@media (min-width: 350px){
+/* 	body {
+		background-color: red;
+	} */
+	img.social-network-icon {
+	max-height: 25px;
+  	max-width: 35px;	
+	}
+}
+
+ul.social-network-nav {
+	flex-direction: inherit;
+}
+
+div.container {
+/*	border: 1px solid red;*/
+	margin-top: 110px; 
+}
+
+/* div.row{
+	border: 1px solid blue;
+} */
+
+
+div.column {
+/*	border: 1px solid green;*/
+	width: 100%;
+	text-align: center;
+}
+
+div.list-item-head {
+	margin-bottom: 30px;
+}
+
+div.list-item {
+	background-color: #FFFFFF;
+	display: inline-block;
+	position: relative;
+	margin: 15px 12px;
+	box-shadow: 1px 1px 1px 1px #DDDDDD;
+}
+
+div.list-item img {
+	opacity: 1;
+	display: inline-block;
+	width: 100%;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+div.list-item:hover {
+	box-shadow: 1px 1px 1px 1px #F2F2F2;
+}
+div.list-item:hover img {
+  opacity: 0.3;
+}
+div.list-item:hover .show-detail {
+  opacity: 1;
+}
+
+div.list-item-two {
+	border-top: 1px solid #EDEDED;
+}
+
+div.list-item-body-element {
+	display: inline-block;
+	width: 49%; 
+	padding: 5px;
+}
+.left-img {
+	border-right: 1px solid #EDEDED;
+}
+
+div.show-detail {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+	background-color: #4CAF50;
+	color: white;
+	font-size: 16px;
+	padding: 16px 32px;
+}
+
+div#look-detail {
+	background-color: #FFFFFF;
+	width: 100%;
+	text-align: center;
+	border: 1px solid #F2F2F2;
+}
+@media (min-width: 1000px){
+/* 	body {
+		background-color: red;
+	} */
+	div#look-detail img {
+		width: 65%;
+	}
+}
+@media (max-width: 1000px){
+/* 	body {
+		background-color: pink;
+	} */
+	div#look-detail img {
+		width: 100%;
+	}
+}
+
+div.detail-item-head {
+	margin-bottom: 20px;
+}
+
+div.detail-item-body-element {
+	display: inline-block;
+	width: 48%;
+	padding: 15px;
+}
+div.detail-item-two {
+	border-top: 1px solid #EDEDED;
+}
+
+@media (min-width: 1000px){
+/* 	body {
+		background-color: pink;
+	} */
+}
+@media (max-width: 1000px){
+/* 	body {
+		background-color: red;
+	} */
+	.more-choice {
+		width: 100%;
+		text-align: center;
+	}
+	.more-choice h1 {
+		font-size: 0.5em;
+	}
+}
+.more-choice {
+	font-size: 10vw;
+	margin-top: 70px;
+	margin-bottom: 35px;
+}
+
+@media (max-width: 767px){
+/* 	body {
+		background-color: red;
+	} */	
+	.col-item-detail{
+		padding: 2px;
+	}
+}
+div.item-detail {
+/*	border: 1px solid red;*/
+	background-color: #FFFFFF;
+	border: 1px solid #F2F2F2;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+div.item-detail img {
+/*	border: 1px solid black;*/
+	width: 100%;
+}
+
+@media (max-width: 400px){
+/* 	body {
+		background-color: red;
+	}	 */
+	.item-price {
+		font-size: 12px;
+	}
+}
+.item-price {
+/*	border: 1px solid red;*/
+	display: block;
+	width: 100%;
+	margin-top: 4px;
+	margin-bottom: 8px;
+	color: #000000;
+}
+
+@media (min-width: 1000px){
+/* 	body {
+		background-color: pink;
+	}	 */
+	.btn-light-shopping-site-link {
+		font-size: 14px;
+		font-weight: 500;
+	}
+}
+@media (max-width: 1000px){
+/* 	body {
+		background-color: red;
+	} */	
+	.btn-light-shopping-site-link {
+		font-size: 11px;
+		font-weight: 500;
+	}
+}
+@media (max-width: 500px){
+/* 	body {
+		background-color: green;
+	} */	
+	.btn-light-shopping-site-link {
+		font-size: 9px;
+		font-weight: 700;
+	}
+}
+@media (max-width: 400px){
+/* 	body {
+		background-color: yellow;
+	} */	
+	.btn-light-shopping-site-link {
+		font-size: 8px;
+		font-weight: 700;
+	}
+}
+@media (max-width: 350px){
+/* 	body {
+		background-color: #112233;
+	} */	
+	.btn-light-shopping-site-link {
+		font-size: 7px;
+		font-weight: 700;
+	}
+}
+@media (max-width: 250px){
+/* 	body {
+		background-color: #487542;
+	}	 */
+	.btn-light-shopping-site-link {
+		font-size: 6px;
+		font-weight: 700;
+	}
+}
+.btn-light-shopping-site-link {
+	border-radius: 1px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	padding-left: 4px;
+	padding-right: 4px; 
+/*	background-color: #4CAF50;
+	color: #FFFFFF;*/
+}
+
+div.form-add-look {
+    background-color: oldlace;
+}
