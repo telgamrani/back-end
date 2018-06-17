@@ -2,114 +2,157 @@ import { Injectable } from '@angular/core'
 
 @Injectable()
 export class Globals {
-    look = { 
-        id: 1, 
-        urlLookImg: "assets/img/looks/04.jpg",
-        principalsArticles: [
+    look = {
+        "imgUrl": "assets/img/looks/04.jpg",
+        "principalArticles": [
             {
-                id: 1,
-                urlArticleImg: "assets/img/look/chemise/01.jpg",
-                price: "25,99",
-                currency: "€"
+                "imgUrl": "assets/img/look/chemise/01.jpg",
+                "price": 30.99,
+                "shoppingUrl": "shoppingUrl",
+                "currency": "€",
+                "articleType": "PRINCIPAL",
+                "position": 1
             },
             {
-                id: 2,
-                urlArticleImg: "assets/img/look/chemise/01.jpg",
-                price: "10,99",
-                currency: "€"
+                "imgUrl": "assets/img/look/chemise/01.jpg",
+                "price": 30.99,
+                "shoppingUrl": "shoppingUrl",
+                "currency": "€",
+                "articleType": "PRINCIPAL",
+                "position": 2
             },
             {
-                id: 3,
-                urlArticleImg: "assets/img/look/chemise/01.jpg",
-                price: "25,99",
-                currency: "€"
+                "imgUrl": "assets/img/look/chemise/01.jpg",
+                "price": 30.99,
+                "shoppingUrl": "shoppingUrl",
+                "currency": "€",
+                "articleType": "PRINCIPAL",
+                "position": 3
             },
             {
-                id: 4,
-                urlArticleImg: "assets/img/look/chemise/01.jpg",
-                price: "10,99",
-                currency: "€"
+                "imgUrl": "assets/img/look/chemise/01.jpg",
+                "price": 30.99,
+                "shoppingUrl": "shoppingUrl",
+                "currency": "€",
+                "articleType": "PRINCIPAL",
+                "position": 4
             },
             {
-                id: 5,
-                urlArticleImg: "assets/img/look/chemise/01.jpg",
-                price: "25,99",
-                currency: "€"
+                "imgUrl": "assets/img/look/chemise/01.jpg",
+                "price": 30.99,
+                "shoppingUrl": "shoppingUrl",
+                "currency": "€",
+                "articleType": "PRINCIPAL",
+                "position": 5
             },
             {
-                id: 6,
-                urlArticleImg: "assets/img/look/chemise/01.jpg",
-                price: "10,99",
-                currency: "€"
+                "imgUrl": "assets/img/look/chemise/01.jpg",
+                "price": 30.99,
+                "shoppingUrl": "shoppingUrl",
+                "currency": "€",
+                "articleType": "PRINCIPAL",
+                "position": 6
             }
         ],
-        moreArticles: [
+        "moreArticles": [
             {
-                id: 1,
-                urlArticleImg: "assets/img/look/chemise/01.jpg",
-                price: "25,99",
-                currency: "€"
+                "imgUrl": "assets/img/look/chemise/01.jpg",
+                "price": 30.99,
+                "shoppingUrl": "shoppingUrl",
+                "currency": "€",
+                "articleType": "SECONDARY",
+                "position": 1
             },
             {
-                id: 2,
-                urlArticleImg: "assets/img/look/chemise/01.jpg",
-                price: "25,99",
-                currency: "€"
+                "imgUrl": "assets/img/look/chemise/01.jpg",
+                "price": 30.99,
+                "shoppingUrl": "shoppingUrl",
+                "currency": "€",
+                "articleType": "SECONDARY",
+                "position": 2
             },
             {
-                id: 3,
-                urlArticleImg: "assets/img/look/chemise/01.jpg",
-                price: "25,99",
-                currency: "€"
+                "imgUrl": "assets/img/look/chemise/01.jpg",
+                "price": 30.99,
+                "shoppingUrl": "shoppingUrl",
+                "currency": "€",
+                "articleType": "SECONDARY",
+                "position": 3
             },
             {
-                id: 4,
-                urlArticleImg: "assets/img/look/chemise/01.jpg",
-                price: "25,99",
-                currency: "€"
+                "imgUrl": "assets/img/look/chemise/01.jpg",
+                "price": 30.99,
+                "shoppingUrl": "shoppingUrl",
+                "currency": "€",
+                "articleType": "SECONDARY",
+                "position": 4
             },
             {
-                id: 5,
-                urlArticleImg: "assets/img/look/chemise/01.jpg",
-                price: "25,99",
-                currency: "€"
+                "imgUrl": "assets/img/look/chemise/01.jpg",
+                "price": 30.99,
+                "shoppingUrl": "shoppingUrl",
+                "currency": "€",
+                "articleType": "SECONDARY",
+                "position": 5
             },
             {
-                id: 6,
-                urlArticleImg: "assets/img/look/chemise/01.jpg",
-                price: "25,99",
-                currency: "€"
+                "imgUrl": "assets/img/look/chemise/01.jpg",
+                "price": 30.99,
+                "shoppingUrl": "shoppingUrl",
+                "currency": "€",
+                "articleType": "SECONDARY",
+                "position": 6
             },
             {
-                id: 6,
-                urlArticleImg: "assets/img/look/chemise/01.jpg",
-                price: "25,99",
-                currency: "€"
+                "imgUrl": "assets/img/look/chemise/01.jpg",
+                "price": 30.99,
+                "shoppingUrl": "shoppingUrl",
+                "currency": "€",
+                "articleType": "SECONDARY",
+                "position": 7
             },
             {
-                id: 6,
-                urlArticleImg: "assets/img/look/chemise/01.jpg",
-                price: "25,99",
-                currency: "€"
+                "imgUrl": "assets/img/look/chemise/01.jpg",
+                "price": 30.99,
+                "shoppingUrl": "shoppingUrl",
+                "currency": "€",
+                "articleType": "SECONDARY",
+                "position": 8
             },
             {
-                id: 6,
-                urlArticleImg: "assets/img/look/chemise/01.jpg",
-                price: "25,99",
-                currency: "€"
+                "imgUrl": "assets/img/look/chemise/01.jpg",
+                "price": 30.99,
+                "shoppingUrl": "shoppingUrl",
+                "currency": "€",
+                "articleType": "SECONDARY",
+                "position": 9
             },
             {
-                id: 6,
-                urlArticleImg: "assets/img/look/chemise/01.jpg",
-                price: "25,99",
-                currency: "€"
+                "imgUrl": "assets/img/look/chemise/01.jpg",
+                "price": 30.99,
+                "shoppingUrl": "shoppingUrl",
+                "currency": "€",
+                "articleType": "SECONDARY",
+                "position": 10
             },
             {
-                id: 6,
-                urlArticleImg: "assets/img/look/chemise/01.jpg",
-                price: "25,99",
-                currency: "€"
+                "imgUrl": "assets/img/look/chemise/01.jpg",
+                "price": 30.99,
+                "shoppingUrl": "shoppingUrl",
+                "currency": "€",
+                "articleType": "SECONDARY",
+                "position": 11
+            },
+            {
+                "imgUrl": "assets/img/look/chemise/01.jpg",
+                "price": 30.99,
+                "shoppingUrl": "shoppingUrl",
+                "currency": "€",
+                "articleType": "SECONDARY",
+                "position": 12
             }
-        ],
+        ]
     };
+
+
 }

@@ -3,18 +3,20 @@
       <div class="col-12">
           <div id="look-detail">
               <div class="detail-item-head">
-                  <img [src]="globals.look.urlLookImg"/>
+                  <img [src]="globals.look.imgUrl"/>
               </div>
 
               <div class="detail-item-body">
-                  <div class="detail-item-two" *ngFor="let article of globals.look.principalsArticles; let index = index; let even = even">
+                  <div class="detail-item-two" *ngFor="let article of globals.look.principalArticles; let index = index; let even = even">
                       <div *ngIf="even" class="detail-item-body-element left-img">
-                          <img *ngIf="globals.look.principalsArticles[index]" [src]="globals.look.principalsArticles[index].urlArticleImg"><h5 *ngIf="globals.look.principalsArticles[index]" class="item-price">{{globals.look.principalsArticles[index].price}} {{globals.look.principalsArticles[index].currency}}</h5>
+                          <img *ngIf="globals.look.principalArticles[index]" [src]="globals.look.principalArticles[index].imgUrl"><h5 *ngIf="globals.look.principalArticles[index]" class="item-price">{{globals.look.principalArticles[index].price}} {{globals.look.principalArticles[index].currency}}</h5>
                           <button type="button" class="btn btn-light btn-light-shopping-site-link">Voir sur Amazon</button>
-                      </div>
+                           <br/><span>type : {{globals.look.principalArticles[index].articleType}} || position : {{globals.look.principalArticles[index].position}}</span>
+                        </div>
                       <div *ngIf="even" class="detail-item-body-element">
-                          <img *ngIf="globals.look.principalsArticles[index+1]" [src]="globals.look.principalsArticles[index+1].urlArticleImg"><h5 *ngIf="globals.look.principalsArticles[index+1]" class="item-price">{{globals.look.principalsArticles[index+1].price}} {{globals.look.principalsArticles[index+1].currency}}</h5>
+                          <img *ngIf="globals.look.principalArticles[index+1]" [src]="globals.look.principalArticles[index+1].imgUrl"><h5 *ngIf="globals.look.principalArticles[index+1]" class="item-price">{{globals.look.principalArticles[index+1].price}} {{globals.look.principalArticles[index+1].currency}}</h5>
                           <button type="button" class="btn btn-light btn-light-shopping-site-link">Voir sur Amazon</button>
+                          <br/><span>type : {{globals.look.principalArticles[index+1].articleType}} || position : {{globals.look.principalArticles[index+1].position}}</span>
                       </div>
                       
                   </div>
@@ -31,8 +33,9 @@
       <div class="row"> 
           <div class="col-3 col-item-detail" *ngFor="let article of globals.look.moreArticles; let index = index">
               <div class="item-detail">
-                  <img [src]="article.urlArticleImg"><h5 class="item-price">{{article.price}} {{article.currency}}</h5>
+                  <img [src]="article.imgUrl"><h5 class="item-price">{{article.price}} {{article.currency}}</h5>
                   <button type="button" class="btn btn-light btn-light-shopping-site-link">Voir sur Amazon</button>
+                  <br/><span>type : {{article.articleType}} || position : {{article.position}}</span>
               </div>
           </div>
       </div>
