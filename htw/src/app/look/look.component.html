@@ -58,16 +58,16 @@
               <input type="file" class="form-control" id="lookImg">
             </div>
             <div class="col">
-              <input type="number" class="form-control" id="lookImg" placeholder="Price">
+              <input type="number" [(ngModel)]="principalArticles.price" name="principalArticlesPrice" class="form-control" id="lookImg" placeholder="Price">
             </div>
             <div class="col">
-              <input type="text" class="form-control" id="lookImg" placeholder="Shopping url">
+              <input type="text" [(ngModel)]="principalArticles.shoppingUrl" name="principalArticlesShoppingUrl"  class="form-control" id="lookImg" placeholder="test Shopping url">
             </div>
             <div class="col">
-              <input type="number" class="form-control" id="lookImg" placeholder="Position">
+              <input type="number" [(ngModel)]="principalArticles.position" name="principalArticlesPosition" class="form-control" id="lookImg" placeholder="Position">
             </div>
             <div class="col">
-                <button type="submit" class="btn btn-primary">Ajouter</button>
+                <button type="submit" (click)="addNewArticle('PRINCIPAL')" class="btn btn-primary">Ajouter</button>
             </div>
           </div>
           <h6> plus d'article :  </h6>

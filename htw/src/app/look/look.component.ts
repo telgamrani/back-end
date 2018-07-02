@@ -9,10 +9,18 @@ import { Globals } from '../globals';
 export class LookComponent implements OnInit {
 
   showFormAddLook : boolean = true;
+  look = <any>{};
+  principalArticles = <any>{};
+  moreArticles = <any>{};
 
   constructor(private globals: Globals) { }
 
   ngOnInit() {
+  }
+
+  addNewArticle(type){
+    this.principalArticles.type = type;
+    console.info(this.principalArticles);    
   }
 
   toogleShowFormAddLook(){
