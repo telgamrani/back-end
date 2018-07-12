@@ -40,31 +40,37 @@
           </div>
       </div>
   </div>
+
   <div class="fixed-bottom">
     <div class="form-add-look"  >
       <form *ngIf="showFormAddLook">
           <h6> look : </h6>
           <div class="form-row">
             <div class="col">
-               <input type="file" class="form-control" id="lookImg">
-            </div>
-            <div class="col">
-                <button type="submit" class="btn btn-primary">Ajouter</button>
+                <input style="display: none;" type="file" (change)="onFileChangedLookImg($event)" #lookImgInput name="lookImgInput" class="form-control"/>
+                <button (click)="lookImgInput.click()" class="btn btn-primary">Select pricipal img</button>
+                {{lookImgInput.value}}
             </div>
           </div>
-          <h6> article principale :  </h6>
+          <h6> article principale  :  </h6>
           <div class="form-row">
             <div class="col">
-              <input type="file" class="form-control" id="lookImg">
+                <div class="row">
+                    <div class="col">
+                        <input style="display: none;" type="file"  (change)="onFileChangedPrincipalArticle($event)" #articlePrincipalImgInput name="articlePrincipalImg" class="form-control" id="lookImg"/>
+                        <button (click)="articlePrincipalImgInput.click()" class="btn btn-primary">Select pricipal img</button>
+                        {{articlePrincipalImgInput.value}}
+                    </div>
+                </div>
             </div>
             <div class="col">
-              <input type="number" [(ngModel)]="principalArticles.price" name="principalArticlesPrice" class="form-control" id="lookImg" placeholder="Price">
+              <input type="number" [(ngModel)]="principalArticle.price" name="principalArticlesPrice" class="form-control" id="lookImg" placeholder="Price">
             </div>
             <div class="col">
-              <input type="text" [(ngModel)]="principalArticles.shoppingUrl" name="principalArticlesShoppingUrl"  class="form-control" id="lookImg" placeholder="test Shopping url">
+              <input type="text" [(ngModel)]="principalArticle.shoppingUrl" name="principalArticlesShoppingUrl"  class="form-control" id="lookImg" placeholder="test Shopping url">
             </div>
             <div class="col">
-              <input type="number" [(ngModel)]="principalArticles.position" name="principalArticlesPosition" class="form-control" id="lookImg" placeholder="Position">
+              <input type="number" [(ngModel)]="principalArticle.position" name="principalArticlesPosition" class="form-control" id="lookImg" placeholder="Position">
             </div>
             <div class="col">
                 <button type="submit" (click)="addNewArticle('PRINCIPAL')" class="btn btn-primary">Ajouter</button>
@@ -73,19 +79,25 @@
           <h6> plus d'article :  </h6>
           <div class="form-row">
             <div class="col">
-              <input type="file" class="form-control" id="lookImg">
+                <div class="row">
+                    <div class="col">
+                        <input style="display: none;" type="file" (change)="onFileChangedMoreArticle($event)" #articleMoreImgInput name="articleMoreImg" class="form-control" id="lookImg"/>
+                        <button (click)="articleMoreImgInput.click()" class="btn btn-primary">Select pricipal img</button>
+                        {{articleMoreImgInput.value}}
+                    </div>
+                </div>
             </div>
             <div class="col">
-              <input type="number" class="form-control" id="lookImg" placeholder="Price">
+              <input type="number" [(ngModel)]="moreArticle.price" name="moreArticlesPrice" class="form-control" id="lookImg" placeholder="Price">
             </div>
             <div class="col">
-              <input type="text" class="form-control" id="lookImg" placeholder="Shopping url">
+              <input type="text" [(ngModel)]="moreArticle.shoppingUrl" name="moreArticlesShoppingUrl" class="form-control" id="lookImg" placeholder="Shopping url">
             </div>
             <div class="col">
-              <input type="number" class="form-control" id="lookImg" placeholder="Position">
+              <input type="number" [(ngModel)]="moreArticle.position" name="moreArticlesPosition" class="form-control" id="lookImg" placeholder="Position">
             </div>
             <div class="col">
-                <button type="submit" class="btn btn-primary">Ajouter</button>
+                <button type="submit" (click)="addNewArticle('SECONDARY')" class="btn btn-primary">Ajouter</button>
             </div>
           </div>
       </form>
